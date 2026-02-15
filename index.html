@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GiggliBee.Kashif - Official Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* ===== Top Scrolling Bar ===== */
+.top-strip {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.top-strip p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 18s linear infinite;
+    font-weight: bold;
+    font-size: 16px;
+}
+@keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ===== Banner ===== */
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: #ff6600;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #ff8533;
+}
+
+/* ===== Content Sections ===== */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+.videos { background-color: #e0f7fa; }
+.about { background-color: #fff3e0; }
+.contact { background-color: #fce4ec; }
+
+/* ===== Subscribe Box ===== */
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.sub-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.subscribe-btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 18px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.subscribe-btn:hover {
+    background-color: darkred;
+}
+
+/* ===== Videos Grid ===== */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.video-container iframe {
+    border-radius: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    .banner { height: 250px; }
+    .video-container iframe {
+        width: 100%;
+        height: 220px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Top Scrolling Announcement Bar -->
+<div class="top-strip">
+    <p>
+        🌟 Welcome to GiggliBee.Kashif! Thank you for visiting our website. 
+        Please Subscribe to our channel, Like and Share our videos. 
+        We bring fun and educational videos for your kids every day! 🎉
+    </p>
+</div>
+
+<!-- Banner -->
+<div class="banner">
+    <img src="banner.jpg" alt="Website Banner">
+</div>
+
+<!-- Header -->
+<header>
+    <img src="logo.png" alt="Channel Logo" class="logo">
+    <h1>Welcome to GiggliBee.Kashif</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Videos Section -->
+<section id="home" class="content videos">
+    <h2>Latest Videos</h2>
+
+    <!-- Subscribe Box -->
+    <div class="subscribe-box">
+        <img src="watermark.png" class="sub-logo" alt="Channel Logo">
+        <div>
+            <h3>GiggliBee.Kashif</h3>
+            <a href="https://www.youtube.com/@GiggliBee.Kashif" target="_blank" class="subscribe-btn">
+                🔔 Subscribe
+            </a>
+        </div>
+    </div>
+
+    <div class="video-container">
+
+        <!-- Old Videos -->
+        <iframe width="350" height="200"
+            src="https://www.youtube.com/embed/bJOmtNpCxhU"
+            allowfullscreen>
+        </iframe>
+
+        <iframe width="350" height="200"
+            src="https://www.youtube.com/embed/isMG9X91t_I"
+            allowfullscreen>
+        </iframe>
+
+        <!-- New Shorts Converted -->
+        <iframe width="350" height="200"
+            src="https://www.youtube.com/embed/cfBFmiSbNG8"
+            allowfullscreen>
+        </iframe>
+
+        <iframe width="350" height="200"
+            src="https://www.youtube.com/embed/YkoPpzjwB8s"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="content about">
+    <h2>About My Channel</h2>
+    <p>
+Welcome to GiggliBee Kids Fun – your ultimate happy place for colorful, playful, and super cute 3D cartoons! 🌟 
+Here kids can dance, laugh, and explore magical adventures full of joy and imagination.
+    </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="content contact">
+    <h2>Contact Me</h2>
+    <p>Email: gigglibeekashif@gmail.com</p>
+    <p>
+        <a href="https://www.facebook.com/profile.php?id=61587954511263" target="_blank">
+            Visit My Facebook Page
+        </a>
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 GiggliBee.Kashif | All Rights Reserved
+</footer>
+
+</body>
+</html>
